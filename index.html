@@ -8,10 +8,13 @@
       <style>
           body{
               color: red ;
-              background-color: gray ;
+              background-color: #dbe2e2 ;
               font-family: Arial ;
             }
-          #Button{
+            nav>*{
+                display : inline-block ; 
+            }
+          .Button{
             /*font-family : Bold ;*/
             background : transparent ;
             border : 0 ;
@@ -21,12 +24,12 @@
             left : 200px ;
             right : 100px ;
           }
-          #menu{
+          .menu{
               /*font-family : Black ;*/
               padding : 10px ;
-              display : none;
+              display : none ;
             }
-          #box{
+          .box{
             position : absolute ;
             padding : 10px;
             width : 200px ;
@@ -34,19 +37,26 @@
             left : 410px ;
             right : 210px ;
             }
-          #container{
+          .container-1{
               font-family : Arial ;
               font-size : "2" ;
               padding : 10px ;
               background-color : gray ;
               font-color : black ;
             }
-          #icon{
+          .icon{
               position : absolute ;
               width : 50px ;
               height : 40px ;
               left : 700px ;
               right : 500px ;
+            }
+            .subtitle{
+              text-align:center;
+              
+            }
+            .subtitle > h1{
+              display : inline-block ;
           }
       </style>               
 </head>
@@ -57,18 +67,21 @@
           <ul>
               <li class = "menu"><a href ="#">Menu1</a></li>
           </ul>
-    </nav>
         <div class ="box">
-            <div class = "container-1">
-                <span class ="icon"><i class ="fa fa-search"></i></span>
-                <input type ="search" id ="search" placeholder="Search..." name ="Search"/>
-            </div>
+              <div class = "container-1">
+                  <span class ="icon"><i class ="fa fa-search"></i></span>
+                  <input type ="search" id ="search" placeholder="Search..." name ="Search"/>
+              </div>
         </div>
-    <h1><l>The New Work Times</l></h1>
+            
+    </nav>
+        <div class = "subtitle">
+          <h1><i>The New Work Times</i></h1>
+        </div>
       <h2><b>First Jaguar E-type <br>competition car heads to<br> auction</b></h2>
       <link href = "//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"="stylesheet">
       <i class = "fab fa-angellist"> </i>
-      <img src = "https://cdn.unwire.hk/wp-content/uploads/2016/12/1202-5a.jpg" width="800" height="600" border = "0">
+      <img src = "https://cdn.unwire.hk/wp-content/uploads/2016/12/1202-5a.jpg" width="400" height="300" border = "0">
       This is a car.
 </body>
 
