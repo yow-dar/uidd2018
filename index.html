@@ -19,10 +19,11 @@
             background : transparent ;
             border : 0 ;
             position : absolute ;
-            width : 20px ;
-            height : 9px ;
-            left : 200px ;
-            right : 100px ;
+            width : 130px ;
+            height : 90px ;
+            left : 10px ;
+            max-width : 100% ;
+            max-height : 100% ; 
           }
           .menu{
               /*font-family : Black ;*/
@@ -33,15 +34,14 @@
             position : absolute ;
             padding : 10px;
             width : 200px ;
-            height : 70px ;
-            left : 410px ;
-            right : 210px ;
+            height : 90px ;
+            left : 150px ;
             }
           .container-1{
               font-family : Arial ;
               font-size : "2" ;
               padding : 10px ;
-              background-color : gray ;
+              background-color : transparent ;
               font-color : black ;
             }
           .icon{
@@ -57,11 +57,21 @@
             }
             .subtitle > h1{
               display : inline-block ;
-          }
+              position : absolute ;
+              text-align : center ; 
+            }
+            .subtitle2 > b{
+                position : absolute ;
+                text-align : center ;
+            }
+            .picture{
+                width : 400px ;
+                height : 300px ;
+                
+            }
       </style>               
 </head>
-<body>
-    
+<body>    
     <nav>
         <button class = "Button"><img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/200px-Hamburger_icon.svg.png" alt="SECTIONS"></button>
           <ul>
@@ -72,16 +82,15 @@
                   <span class ="icon"><i class ="fa fa-search"></i></span>
                   <input type ="search" id ="search" placeholder="Search..." name ="Search"/>
               </div>
-        </div>
-            
+        </div>   
     </nav>
         <div class = "subtitle">
           <h1><i>The New Work Times</i></h1>
         </div>
-      <h2><b>First Jaguar E-type <br>competition car heads to<br> auction</b></h2>
+      <h2 class = "subtitle2"><b>First Jaguar E-type <br>competition car heads to<br> auction</b></h2>
       <link href = "//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"="stylesheet">
       <i class = "fab fa-angellist"> </i>
-      <img src = "https://cdn.unwire.hk/wp-content/uploads/2016/12/1202-5a.jpg" width="400" height="300" border = "0">
+      <img class = "picture" src = "https://cdn.unwire.hk/wp-content/uploads/2016/12/1202-5a.jpg" border = "0" align = "absmiddle">
       This is a car.
 </body>
 
